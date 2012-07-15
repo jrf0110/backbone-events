@@ -1,5 +1,5 @@
-define(function(require){
-  return {
+(function(){
+  var BackboneEvents = {
     on: function(events, callback, context) {
       var ev;
       events = events.split(/\s+/);
@@ -56,4 +56,7 @@ define(function(require){
       return this;
     }
   };
-});
+  if (define) define(function(){ return BackboneEvents; });
+  else if (module) module.exports = BackboneEvents;
+  else window.BackeboneEvents = BackboneEvents;
+})();
