@@ -2,7 +2,7 @@
   "author": "Jeremy Ashkenas <jeremy@documentcloud.org>",
   "name": "backbone-events",
   "description": "Standalone backbone events",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "repository": {
     "type": "git",
     "url": "git://github.com/jrf0110/backbone-events.git"
