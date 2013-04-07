@@ -56,7 +56,7 @@
       return this;
     }
   };
-  if (define) define(function(){ return BackboneEvents; });
-  else if (module) module.exports = BackboneEvents;
-  else window.BackeboneEvents = BackboneEvents;
+  if (typeof define == "function") define(function(){ return BackboneEvents; });
+  else if (typeof module == "object") module.exports = BackboneEvents;
+  else window.BackboneEvents = BackboneEvents;
 })();
